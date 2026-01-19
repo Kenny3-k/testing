@@ -19,7 +19,8 @@
 
 <main>
     {%if current_user.is_authenticated%}
-    <h3 class="welcome-text">Hello {{current_user.name}}, Welcome Back! You are welcome</h3>
+    <h3 class="welcome-text">Hello {{current_user.name}}, Welcome Back!</h3>
+    <h4>This is an extra welcome text</h4>
     {%else%}
     <h3 class="welcome-text">Hello Guest, Welcome!</h3>
     {%endif%}
